@@ -2,7 +2,7 @@
 // KONFIGURASI (SUDAH DIISI DENGAN DATA KAMU)
 // ============================================================
 const CLIENT_ID = '616cec747de64e629c42df7f74c1888f'; 
-const REDIRECT_URI = 'https://spotify-itel.vercel.app'; 
+const REDIRECT_URI = 'https://web-by-arya.vercel.app';
 const SCOPES = [
     'user-read-private',
     'user-read-email',
