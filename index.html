@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify itel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HALAMAN LOGIN -->
+    <div id="login-section">
+        <h1>Spotify itel</h1>
+        <p>Masuk untuk mulai mendengarkan</p>
+        <button id="login-btn">Login dengan Spotify</button>
+    </div>
+
+    <!-- HALAMAN DASHBOARD -->
+    <div id="dashboard" class="hidden">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Spotify itel</div>
+            <nav>
+                <a href="#" class="nav-item active" data-view="home">🏠 Home</a>
+                <a href="#" class="nav-item" data-view="search">🔍 Cari Musik</a>
+                <a href="#" class="nav-item" data-view="playlists">📚 Playlist Saya</a>
+            </nav>
+            <div class="user-mini">
+                <img id="sidebar-avatar" src="" alt="Avatar" />
+                <span id="sidebar-name"></span>
+            </div>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="main-content">
+            <!-- Kolom Pencarian -->
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Cari lagu, artis, atau album..." />
+                <button id="search-btn">Cari</button>
+            </div>
+
+            <!-- Tampilan Home -->
+            <section id="view-home" class="view">
+                <h2>Selamat datang, <span id="greeting-name"></span> 👋</h2>
+                <h3>Playlist Kamu</h3>
+                <div id="playlists-grid" class="grid"></div>
+            </section>
+
+            <!-- Tampilan Pencarian -->
+            <section id="view-search" class="view hidden">
+                <h2>Hasil Pencarian</h2>
+                <div id="search-results" class="grid"></div>
+            </section>
+
+            <!-- Tampilan Semua Playlist -->
+            <section id="view-playlists" class="view hidden">
+                <h2>Semua Playlist</h2>
+                <div id="all-playlists" class="grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
